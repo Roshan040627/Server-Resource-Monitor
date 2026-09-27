@@ -1,0 +1,20 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Credentials
+.env
+.env.*
+
+# Personal recipient information
+recipients.txt
+
+# Generated dashboards and logs
+logs/
+RAM-TEST-LOGS/
+server_dashboard_*.html
+
+# macOS
+.DS_Store

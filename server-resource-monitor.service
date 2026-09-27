@@ -1,0 +1,15 @@
+[Unit]
+Description=Server Resource Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/server_resource_monitor
+ExecStart=/usr/bin/python3 /opt/server_resource_monitor/monitor_service.py
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
